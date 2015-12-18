@@ -23,7 +23,8 @@ function Initialize(a_Plugin)
 	-- Load the config file
 	LoadSettings()
 	
-	cPluginManager:AddHook(cPluginManager.HOOK_PLAYER_LEFT_CLICK, OnPlayerLeftClick)
+	cPluginManager:AddHook(cPluginManager.HOOK_PLAYER_BREAKING_BLOCK, OnPlayerBreakingBlock);
+
 	
 	return true
 end
